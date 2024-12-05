@@ -18,7 +18,9 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_goSplitEvenlyPageButton_clicked();
+
+    void on_goSplitIndPageButton_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -13,6 +13,9 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    DebtTree.h \
+    Transaction.h \
+    debtGraph.h \
     mainwindow.h
 
 FORMS += \
