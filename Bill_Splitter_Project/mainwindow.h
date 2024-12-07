@@ -17,11 +17,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_goSplitEvenlyPageButton_clicked();
-
-    void on_goSplitIndPageButton_clicked();
-
 private:
     Ui::MainWindow *ui;
 };

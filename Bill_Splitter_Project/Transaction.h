@@ -8,7 +8,7 @@ using namespace std;
 
 struct Transaction {
     string payer;
-    double bill;
+    double billss;
     double tax;
     double tip;
     double gratuity;
@@ -16,7 +16,7 @@ struct Transaction {
 
     Transaction(const string& _payer, double _bill, double _tax, double _tip, double _gratuity, vector<string>& debtors){
         payer = _payer;
-        bill = _bill;
+        billss = _bill;
         tax = _tax;
         tip = _tip;
         gratuity = _gratuity;
