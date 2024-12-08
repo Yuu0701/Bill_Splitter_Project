@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <debtGraph.h>
+#include <DebtTree.h>
+#include <Transaction.h>
+#include <map>
+using namespace std;
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +22,58 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_movePageTwoButton_clicked();
+
+    void on_goPage1Button_clicked();
+
+    void on_goBackPage2Button_clicked();
+
+    void on_addNameButton_clicked();
+
+    void on_newTransactionButton_clicked();
+
+    void on_TransHistoryButton_clicked();
+
+    void on_splitIndButton_clicked();
+
+    void on_debtShareButton_clicked();
+
+    void on_fifteenTipButton_clicked();
+
+    void on_eighteenTipButton_clicked();
+
+    void on_twentyTipButton_clicked();
+
+    void on_twentyFiveTipButton_clicked();
+
+    void on_calculateButton_clicked();
+
+    void on_goBackPage3Button_clicked();
+
+    void on_goMenuButton_clicked();
+
+    void on_addFeeButton_clicked();
+
+    void on_splitEvenlyButton_clicked();
+
+    void on_backToMenuPageButton_clicked();
+
+    void on_GoBackMenuButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    vector<string> participants;
+    map<string, double> debtBalance;
+    string payer;
+    double subtotal;
+    double tax;
+    double tip;
+    double gratuity;
+
+    double calculateBill();
+    void newBalance();
+    double calculateTip(double tipPercent);
+    double calculateShare();
 };
 #endif // MAINWINDOW_H

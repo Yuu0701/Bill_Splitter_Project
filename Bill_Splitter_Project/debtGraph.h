@@ -2,7 +2,7 @@
 #define DEBTGRAPH_H
 
 #include <iostream>
-#include <unordered_map>
+#include <map>
 #include <string>
 #include <list>
 #include <vector>
@@ -12,7 +12,7 @@ using namespace std;
 class Graph{
 private:
     //holds key and value of vector of pairs
-    unordered_map<string, vector<pair<string, double>>> graph;
+    map<string, vector<pair<string, double>>> graph;
 public:
     Graph(){
         //nothing
