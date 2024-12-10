@@ -13,6 +13,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    Bill.h \
     DebtTree.h \
     Transaction.h \
     debtGraph.h \

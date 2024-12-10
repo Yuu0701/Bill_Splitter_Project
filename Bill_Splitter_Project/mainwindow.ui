@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>632</width>
-    <height>519</height>
+    <width>856</width>
+    <height>640</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,92 +21,197 @@
     <string notr="true">background-color: rgb(255,251,247)</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_13">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>10</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiBold</family>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	background-color: rgb(155, 17, 30);
+	color: #FFF;
+}</string>
+      </property>
+      <property name="text">
+       <string>Bill Splitter</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255,251,247)</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="page_1">
-       <layout class="QVBoxLayout" name="verticalLayout_3">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <spacer name="verticalSpacer">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Policy::Maximum</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="NumPeopleLabel">
-            <property name="text">
-             <string>Number in Group</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="NumPeopleLineEdit">
-            <property name="placeholderText">
-             <string>Enter a number of people in a group</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="AddPeopleLabel">
-            <property name="text">
-             <string>Add People</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignmentFlag::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QLineEdit" name="nameLineEdit">
-              <property name="placeholderText">
-               <string>Enter a Name </string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="addNameButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>5</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>100</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton {
+       <layout class="QGridLayout" name="gridLayout_31">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_24">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_30">
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>175</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="NumPeopleLabel">
+               <property name="font">
+                <font>
+                 <family>Bahnschrift SemiLight</family>
+                 <pointsize>22</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Number in Group</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="NumPeopleLineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Bahnschrift Light</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="placeholderText">
+                <string>Enter a number of people in a group</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="AddPeopleLabel">
+               <property name="font">
+                <font>
+                 <family>Bahnschrift SemiLight</family>
+                 <pointsize>22</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Add People</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLineEdit" name="nameLineEdit">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Bahnschrift Light</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Enter a Name </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addNameButton">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>5</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
     border-radius: 3px;
     background: rgb(0, 85,  255);
     color: white;
@@ -119,46 +224,46 @@ QPushButton:hover {
 QPushButton:pressed {
     background: rgba(0, 85, 255, 220);
 }</string>
-              </property>
-              <property name="text">
-               <string>Add</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <spacer name="verticalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Orientation::Vertical</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::Policy::Maximum</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>100</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QPushButton" name="movePageTwoButton">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>10</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton {
+                 </property>
+                 <property name="text">
+                  <string>Add</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Orientation::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Policy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>100</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="movePageTwoButton">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>10</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
     border-radius: 3px;
     background: rgb(0, 85,  255);
     color: white;
@@ -171,13 +276,32 @@ QPushButton:hover {
 QPushButton:pressed {
     background: rgba(0, 85, 255, 220);
 }</string>
-            </property>
-            <property name="text">
-             <string>Submit</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+               </property>
+               <property name="text">
+                <string>Submit</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>175</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -197,6 +321,24 @@ QPushButton:pressed {
            </property>
            <item row="2" column="1">
             <widget class="QPushButton" name="TransHistoryButton">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Bahnschrift SemiBold</family>
+               <pointsize>22</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
     border-radius: 3px;
@@ -235,6 +377,24 @@ QPushButton:pressed {
            </item>
            <item row="3" column="1">
             <widget class="QPushButton" name="debtShareButton">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Bahnschrift SemiBold</family>
+               <pointsize>22</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
     border-radius: 3px;
@@ -257,6 +417,30 @@ QPushButton:pressed {
            </item>
            <item row="1" column="1">
             <widget class="QPushButton" name="newTransactionButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Bahnschrift SemiBold</family>
+               <pointsize>22</pointsize>
+              </font>
+             </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
     border-radius: 3px;
@@ -273,7 +457,7 @@ QPushButton:pressed {
 }</string>
              </property>
              <property name="text">
-              <string>+ New Transaction</string>
+              <string>+ New Bill</string>
              </property>
             </widget>
            </item>
@@ -324,6 +508,21 @@ QPushButton:pressed {
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <widget class="QPushButton" name="goPage1Button">
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+               </property>
                <property name="text">
                 <string>Back</string>
                </property>
@@ -342,6 +541,12 @@ QPushButton:pressed {
          <layout class="QGridLayout" name="gridLayout_5">
           <item row="2" column="0">
            <widget class="QLabel" name="subTotalLabel">
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiLight</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Subtotal</string>
             </property>
@@ -351,13 +556,29 @@ QPushButton:pressed {
            <layout class="QHBoxLayout" name="horizontalLayout_6">
             <item>
              <widget class="QLabel" name="tipLabel">
+              <property name="font">
+               <font>
+                <family>Bahnschrift SemiLight</family>
+                <pointsize>16</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Tip: </string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="tipLineEdit"/>
+             <widget class="QLineEdit" name="tipLineEdit">
+              <property name="font">
+               <font>
+                <family>Bahnschrift Light</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="placeholderText">
+               <string>Tip amount</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -372,6 +593,33 @@ QPushButton:pressed {
             <layout class="QGridLayout" name="gridLayout_3">
              <item row="0" column="0">
               <widget class="QPushButton" name="fifteenTipButton">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+               </property>
                <property name="text">
                 <string>15%</string>
                </property>
@@ -379,6 +627,33 @@ QPushButton:pressed {
              </item>
              <item row="0" column="1">
               <widget class="QPushButton" name="eighteenTipButton">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+               </property>
                <property name="text">
                 <string>18%</string>
                </property>
@@ -386,6 +661,33 @@ QPushButton:pressed {
              </item>
              <item row="1" column="0">
               <widget class="QPushButton" name="twentyTipButton">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+               </property>
                <property name="text">
                 <string>20%</string>
                </property>
@@ -393,6 +695,33 @@ QPushButton:pressed {
              </item>
              <item row="1" column="1">
               <widget class="QPushButton" name="twentyFiveTipButton">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+               </property>
                <property name="text">
                 <string>25%</string>
                </property>
@@ -402,20 +731,52 @@ QPushButton:pressed {
            </widget>
           </item>
           <item row="7" column="0">
-           <widget class="QLineEdit" name="gratuityLineEdit"/>
+           <widget class="QLineEdit" name="gratuityLineEdit">
+            <property name="font">
+             <font>
+              <family>Bahnschrift Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>Enter gratuity </string>
+            </property>
+           </widget>
           </item>
           <item row="4" column="0">
            <widget class="QLabel" name="taxLabel">
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiLight</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Tax</string>
             </property>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLineEdit" name="payerLineEdit"/>
+           <widget class="QLineEdit" name="payerLineEdit">
+            <property name="font">
+             <font>
+              <family>Bahnschrift Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>Enter a name</string>
+            </property>
+           </widget>
           </item>
           <item row="6" column="0">
            <widget class="QLabel" name="gratuityLabel">
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiLight</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Gratuity</string>
             </property>
@@ -423,23 +784,49 @@ QPushButton:pressed {
           </item>
           <item row="0" column="0">
            <widget class="QLabel" name="payerLabel">
+            <property name="font">
+             <font>
+              <family>Bahnschrift SemiLight</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Payer</string>
             </property>
            </widget>
           </item>
           <item row="3" column="0">
-           <widget class="QLineEdit" name="subtotalLineEdit"/>
+           <widget class="QLineEdit" name="subtotalLineEdit">
+            <property name="font">
+             <font>
+              <family>Bahnschrift Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>Enter total before taxes</string>
+            </property>
+           </widget>
           </item>
           <item row="5" column="0">
-           <widget class="QLineEdit" name="taxLineEdit"/>
+           <widget class="QLineEdit" name="taxLineEdit">
+            <property name="font">
+             <font>
+              <family>Bahnschrift Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="placeholderText">
+             <string>Enter tax</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
         <item row="0" column="1">
          <widget class="QFrame" name="frame_3">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(75, 255, 132)</string>
+           <string notr="true">background-color: rgb(245, 222, 179)</string>
           </property>
           <property name="frameShape">
            <enum>QFrame::Shape::StyledPanel</enum>
@@ -450,6 +837,33 @@ QPushButton:pressed {
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="1" column="0">
             <widget class="QPushButton" name="calculateButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>30</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
              <property name="text">
               <string>Calculate Bill</string>
              </property>
@@ -472,13 +886,26 @@ QPushButton:pressed {
              </item>
              <item>
               <widget class="QLabel" name="billTotalLabel">
+               <property name="font">
+                <font>
+                 <family>Bahnschrift SemiLight</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
                <property name="text">
                 <string>Bill Total</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QLineEdit" name="billTotalLineEdit"/>
+              <widget class="QLineEdit" name="billTotalLineEdit">
+               <property name="font">
+                <font>
+                 <family>Bahnschrift Light</family>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -488,12 +915,12 @@ QPushButton:pressed {
               <enum>Qt::Orientation::Vertical</enum>
              </property>
              <property name="sizeType">
-              <enum>QSizePolicy::Policy::Fixed</enum>
+              <enum>QSizePolicy::Policy::Maximum</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>200</height>
+               <height>175</height>
               </size>
              </property>
             </spacer>
@@ -508,9 +935,12 @@ QPushButton:pressed {
             <property name="orientation">
              <enum>Qt::Orientation::Horizontal</enum>
             </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Policy::Maximum</enum>
+            </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>40</width>
+              <width>200</width>
               <height>20</height>
              </size>
             </property>
@@ -524,6 +954,33 @@ QPushButton:pressed {
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+            </property>
             <property name="text">
              <string>Split/Add Fees Evenly</string>
             </property>
@@ -531,6 +988,33 @@ QPushButton:pressed {
           </item>
           <item row="1" column="2">
            <widget class="QPushButton" name="splitIndButton">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+            </property>
             <property name="text">
              <string>Split Fees Individually</string>
             </property>
@@ -549,6 +1033,33 @@ QPushButton:pressed {
           <layout class="QGridLayout" name="gridLayout_6">
            <item row="0" column="0">
             <widget class="QPushButton" name="goBackPage2Button">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
              <property name="text">
               <string>Back</string>
              </property>
@@ -559,9 +1070,12 @@ QPushButton:pressed {
              <property name="orientation">
               <enum>Qt::Orientation::Horizontal</enum>
              </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
              <property name="sizeHint" stdset="0">
               <size>
-               <width>40</width>
+               <width>260</width>
                <height>20</height>
               </size>
              </property>
@@ -585,6 +1099,12 @@ QPushButton:pressed {
           <layout class="QGridLayout" name="gridLayout_8">
            <item row="0" column="1">
             <widget class="QLineEdit" name="shareAmountLineEdit">
+             <property name="font">
+              <font>
+               <family>Bahnschrift Light</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
              <property name="placeholderText">
               <string>Share Amount</string>
              </property>
@@ -592,6 +1112,12 @@ QPushButton:pressed {
            </item>
            <item row="0" column="0">
             <widget class="QLineEdit" name="nameDebtorLineEdit">
+             <property name="font">
+              <font>
+               <family>Bahnschrift Light</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
              <property name="placeholderText">
               <string>Name of debtor</string>
              </property>
@@ -599,6 +1125,39 @@ QPushButton:pressed {
            </item>
            <item row="0" column="2">
             <widget class="QPushButton" name="addFeeButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>10</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>60</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
              <property name="text">
               <string>Add Fee</string>
              </property>
@@ -611,7 +1170,8 @@ QPushButton:pressed {
          <widget class="QLabel" name="splitIndTitleLabel">
           <property name="font">
            <font>
-            <pointsize>20</pointsize>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>22</pointsize>
            </font>
           </property>
           <property name="text">
@@ -633,6 +1193,33 @@ QPushButton:pressed {
           <layout class="QGridLayout" name="gridLayout_11">
            <item row="0" column="0">
             <widget class="QPushButton" name="goBackPage3Button">
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>50</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
              <property name="text">
               <string>Back</string>
              </property>
@@ -681,6 +1268,33 @@ QPushButton:pressed {
            </item>
            <item row="0" column="1">
             <widget class="QPushButton" name="goMenuButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
              <property name="text">
               <string>Continue</string>
              </property>
@@ -716,13 +1330,26 @@ QPushButton:pressed {
           <layout class="QGridLayout" name="gridLayout_9">
            <item row="0" column="0">
             <widget class="QLabel" name="totalLabel">
+             <property name="font">
+              <font>
+               <family>Bahnschrift SemiLight</family>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
              <property name="text">
-              <string>Total</string>
+              <string>Total:</string>
              </property>
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QLineEdit" name="totalLineEdit"/>
+            <widget class="QLineEdit" name="totalLineEdit">
+             <property name="font">
+              <font>
+               <family>Bahnschrift Light</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>
@@ -732,9 +1359,12 @@ QPushButton:pressed {
           <property name="orientation">
            <enum>Qt::Orientation::Horizontal</enum>
           </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Maximum</enum>
+          </property>
           <property name="sizeHint" stdset="0">
            <size>
-            <width>40</width>
+            <width>100</width>
             <height>20</height>
            </size>
           </property>
@@ -743,106 +1373,749 @@ QPushButton:pressed {
        </layout>
       </widget>
       <widget class="QWidget" name="page_5">
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>170</x>
-          <y>20</y>
-          <width>371</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Transaction History Display + make/undo payments</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="backToMenuPageButton">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>340</y>
-          <width>75</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Back</string>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_33">
+        <item row="0" column="1" rowspan="2">
+         <widget class="QFrame" name="frame_14">
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_19">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <family>Bahnschrift SemiBold</family>
+               <pointsize>14</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Bill History</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="2">
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="1" column="0">
+            <widget class="QTableWidget" name="tableWidget_payment">
+             <property name="minimumSize">
+              <size>
+               <width>30</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>302</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Bahnschrift Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(245, 222, 179)</string>
+             </property>
+             <column>
+              <property name="text">
+               <string>Payer</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Payee</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Amount</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_11">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="0" column="0">
+               <widget class="QFrame" name="frame_12">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_16">
+                 <item row="1" column="1">
+                  <widget class="QLineEdit" name="payeeLineEdit">
+                   <property name="font">
+                    <font>
+                     <family>Bahnschrift Light</family>
+                    </font>
+                   </property>
+                   <property name="placeholderText">
+                    <string>To who?</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QLineEdit" name="payAmountLineEdit">
+                   <property name="font">
+                    <font>
+                     <family>Bahnschrift Light</family>
+                    </font>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Amount?</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLineEdit" name="payingLineEdit">
+                   <property name="font">
+                    <font>
+                     <family>Bahnschrift Light</family>
+                    </font>
+                   </property>
+                   <property name="placeholderText">
+                    <string>Who is paying?</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QFrame" name="frame_13">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_17">
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="makePaymentButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Make Payment</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="undoPaymentButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Undo Payment</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QFrame" name="frame_25">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_32">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="backToMenuPageButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>350</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>14</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Transaction History Display + make/undo payments</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QFrame" name="frame_15">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_20">
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QTableWidget" name="tableWidget_bill">
+             <property name="font">
+              <font>
+               <family>Bahnschrift Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(245, 222, 179)</string>
+             </property>
+             <column>
+              <property name="text">
+               <string>Who Paid</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>How Much</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Who Owes</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="page_6">
-       <widget class="QLabel" name="label_3">
-        <property name="geometry">
-         <rect>
-          <x>180</x>
-          <y>30</y>
-          <width>281</width>
-          <height>71</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Display DebtGraph and DebtTree</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="GoBackMenuButton">
-        <property name="geometry">
-         <rect>
-          <x>60</x>
-          <y>340</y>
-          <width>75</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Back</string>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_34">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>Bahnschrift SemiBold</family>
+            <pointsize>18</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Display DebtGraph Relationship</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="2">
+         <widget class="QFrame" name="frame_21">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_28">
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_23">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_27">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <family>Bahnschrift SemiBold</family>
+                  <pointsize>18</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Total Debt Display</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QFrame" name="frame_22">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_26">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>click load button to load each participants' name and click view button to see debt</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="2">
+         <widget class="QFrame" name="frame_16">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_21">
+           <item row="1" column="0">
+            <widget class="QTextEdit" name="debtGraphTextEdit">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(245, 222, 179)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_17">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_22">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_15">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>75</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="loadDebtGraphButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Load/Refresh</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_16">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>75</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="1" rowspan="2">
+         <widget class="QFrame" name="frame_18">
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_23">
+           <item row="2" column="0">
+            <widget class="QFrame" name="frame_19">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_24">
+              <item row="0" column="1">
+               <widget class="QPushButton" name="checkDebtButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+                </property>
+                <property name="text">
+                 <string>View</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_13">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>100</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_14">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>100</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_20">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_25">
+              <item row="0" column="0">
+               <spacer name="horizontalSpacer_11">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>100</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QPushButton" name="loadListButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Load/Refresh</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <spacer name="horizontalSpacer_12">
+                <property name="orientation">
+                 <enum>Qt::Orientation::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Policy::Maximum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>100</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QListWidget" name="listWidgetTree">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>240</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(245, 222, 179)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QFrame" name="frame_26">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_29">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="GoBackMenuButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border-radius: 3px;
+    background: rgb(0, 85,  255);
+    color: white;
+}
+
+QPushButton:hover {
+    background: rgba(0, 85, 255, 220);
+}
+
+QPushButton:pressed {
+    background: rgba(0, 85, 255, 220);
+}</string>
+             </property>
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Maximum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>240</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="page_7"/>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>10</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>300</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <family>Bahnschrift SemiBold</family>
-        <pointsize>11</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="mouseTracking">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-	background-color: rgb(155, 17, 30);
-	color: #FFF;
-}</string>
-      </property>
-      <property name="text">
-       <string>Bill Splitter</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignmentFlag::AlignCenter</set>
-      </property>
      </widget>
     </item>
    </layout>
@@ -852,13 +2125,57 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>632</width>
+     <width>856</width>
      <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>nameLineEdit</tabstop>
+  <tabstop>addNameButton</tabstop>
+  <tabstop>movePageTwoButton</tabstop>
+  <tabstop>payingLineEdit</tabstop>
+  <tabstop>debtShareButton</tabstop>
+  <tabstop>newTransactionButton</tabstop>
+  <tabstop>goPage1Button</tabstop>
+  <tabstop>payAmountLineEdit</tabstop>
+  <tabstop>payeeLineEdit</tabstop>
+  <tabstop>makePaymentButton</tabstop>
+  <tabstop>tableWidget_payment</tabstop>
+  <tabstop>undoPaymentButton</tabstop>
+  <tabstop>NumPeopleLineEdit</tabstop>
+  <tabstop>TransHistoryButton</tabstop>
+  <tabstop>GoBackMenuButton</tabstop>
+  <tabstop>backToMenuPageButton</tabstop>
+  <tabstop>gratuityLineEdit</tabstop>
+  <tabstop>listWidgetTree</tabstop>
+  <tabstop>checkDebtButton</tabstop>
+  <tabstop>debtGraphTextEdit</tabstop>
+  <tabstop>tableWidget_bill</tabstop>
+  <tabstop>subtotalLineEdit</tabstop>
+  <tabstop>payerLineEdit</tabstop>
+  <tabstop>taxLineEdit</tabstop>
+  <tabstop>tipLineEdit</tabstop>
+  <tabstop>loadDebtGraphButton</tabstop>
+  <tabstop>totalLineEdit</tabstop>
+  <tabstop>nameDebtorLineEdit</tabstop>
+  <tabstop>shareAmountLineEdit</tabstop>
+  <tabstop>addFeeButton</tabstop>
+  <tabstop>goMenuButton</tabstop>
+  <tabstop>goBackPage3Button</tabstop>
+  <tabstop>fifteenTipButton</tabstop>
+  <tabstop>eighteenTipButton</tabstop>
+  <tabstop>twentyTipButton</tabstop>
+  <tabstop>twentyFiveTipButton</tabstop>
+  <tabstop>goBackPage2Button</tabstop>
+  <tabstop>billTotalLineEdit</tabstop>
+  <tabstop>calculateButton</tabstop>
+  <tabstop>splitEvenlyButton</tabstop>
+  <tabstop>splitIndButton</tabstop>
+  <tabstop>loadListButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

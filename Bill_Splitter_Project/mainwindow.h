@@ -5,7 +5,8 @@
 #include <debtGraph.h>
 #include <DebtTree.h>
 #include <Transaction.h>
-#include <map>
+#include <Bill.h>
+#include <unordered_map>
 using namespace std;
 
 QT_BEGIN_NAMESPACE
@@ -61,19 +62,31 @@ private slots:
 
     void on_GoBackMenuButton_clicked();
 
+    void on_makePaymentButton_clicked();
+
+    void on_undoPaymentButton_clicked();
+
+    void on_loadDebtGraphButton_clicked();
+
+    void on_loadListButton_clicked();
+
+    void on_checkDebtButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     vector<string> participants;
-    map<string, double> debtBalance;
-    string payer;
-    double subtotal;
-    double tax;
-    double tip;
-    double gratuity;
+    unordered_map<string, double> debtBalance;
+    Graph graph;
+    TreeBST tree;
+    stack<Bill> billHistory;
+    stack<Transaction> transactionHistory;
+    double totalHolder;
 
     double calculateBill();
     void newBalance();
+    void addBillHistoryTabel(double total, string& payer, vector<string> debtors);
     double calculateTip(double tipPercent);
     double calculateShare();
+    void displayGraphQt(Graph& g);
 };
 #endif // MAINWINDOW_H

@@ -3,34 +3,17 @@
 
 #include <vector>
 #include <string>
-#include <stack>
 using namespace std;
 
 struct Transaction {
     string payer;
-    double billss;
-    double tax;
-    double tip;
-    double gratuity;
-    vector<string> debtor;
+    string owed;
+    double amount;
 
-    Transaction(const string& _payer, double _bill, double _tax, double _tip, double _gratuity, vector<string>& debtors){
+    Transaction(string& _payer, string& payee, double _amount){
         payer = _payer;
-        billss = _bill;
-        tax = _tax;
-        tip = _tip;
-        gratuity = _gratuity;
-        debtor = debtors;
-    }
-};
-
-class TransactionHistory {
-private:
-    stack<Transaction> transactions;
-public:
-
-    void addTransaction(Transaction& transaction) {
-        transactions.push(transaction);
+        owed = payee;
+        amount = _amount;
     }
 };
 
