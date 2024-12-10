@@ -71,7 +71,7 @@
        <string notr="true">background-color: rgb(255,251,247)</string>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_1">
        <layout class="QGridLayout" name="gridLayout_31">

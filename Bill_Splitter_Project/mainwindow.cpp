@@ -46,12 +46,6 @@ double MainWindow::calculateShare(){
     return share;
 }
 
-void MainWindow::newBalance(){
-
-
-
-}
-
 double MainWindow::calculateTip(double tipPercent){
     double temp = ui->subtotalLineEdit->text().toDouble();
     if (temp <= 0){
